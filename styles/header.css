@@ -1,0 +1,11 @@
+.primary
+{
+  margin: 0 0 16px;
+
+  color: #333;
+
+  font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  line-height: 1.2;
+}

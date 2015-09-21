@@ -1,0 +1,28 @@
+{
+  "name": "universal-usage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "^5.8.23",
+    "babel-loader": "^5.3.2",
+    "css-loader": "^0.18.0",
+    "css-modules-require-hook": "^1.0.8",
+    "express": "^4.13.3",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "jade": "^1.11.0",
+    "marked": "^0.3.5",
+    "postcss-loader": "^0.6.0",
+    "style-loader": "^0.12.4",
+    "webpack": "^1.12.2"
+  }
+}
