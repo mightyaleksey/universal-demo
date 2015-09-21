@@ -1,11 +1,51 @@
+.common
+{
+  position: relative;
+
+  margin: 1em 0 16px;
+
+  font-weight: bold;
+  line-height: 1.4;
+}
+
 .primary
 {
-  margin: 0 0 16px;
+  font-size: 30px;
 
-  color: #333;
+  composes: common;
+}
 
-  font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;
-  font-size: 36px;
-  font-style: normal;
-  line-height: 1.2;
+.secondary
+{
+  font-size: 21px;
+
+  composes: common;
+}
+
+.tertiary
+{
+  font-size: 16px;
+
+  composes: common;
+}
+
+.quaternary
+{
+  font-size: 14px;
+
+  composes: common;
+}
+
+.quinary
+{
+  font-size: 12px;
+
+  composes: common;
+}
+
+.senary
+{
+  font-size: 11px;
+
+  composes: common;
 }

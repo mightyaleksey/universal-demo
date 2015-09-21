@@ -1,0 +1,20 @@
+.body
+{
+  overflow: hidden;
+
+  min-width: 200px;
+  max-width: 790px;
+  margin: 0 auto;
+  padding: 30px;
+
+  word-wrap: break-word;
+
+  color: #333;
+
+  font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+
+  -webkit-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}

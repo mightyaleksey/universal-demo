@@ -1,8 +1,10 @@
-import express from 'express';
+import express, { static as statix } from 'express';
 import marked from 'marked';
 import renderer from './renderer';
 import { readFile } from 'fs';
 import { join, resolve } from 'path';
+import stylesLayout from './styles/layout.css';
+
 const app = express();
 const port = 3000;
 
@@ -17,8 +19,13 @@ app.get('/', (req, res) => {
     }
 
     const html = marked(data, {renderer: renderer});
-    res.render('index', {innerHtml: html});
+    res.render('index', {
+      innerHtml: html,
+      layout: stylesLayout.body
+    });
   });
 });
+
+app.use('/static', statix(join(__dirname, 'static')));
 
 app.listen(port, () => console.log(`listening ${port}`));
