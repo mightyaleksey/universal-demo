@@ -4,6 +4,7 @@ var format = require('util').format;
 var interpolateName = require('loader-utils').interpolateName;
 var hook = require('css-modules-require-hook');
 var path = require('path');
+var loaderPath = path.relative(__dirname, require.resolve('postcss-loader/index.js'));
 
 hook({
   generateScopedName: function (exportedName, exportedPath) {
@@ -12,7 +13,7 @@ hook({
     var options = {
       content: format('%s "./%s!.%s"',
         exportedName,
-        path.relative(__dirname, require.resolve('postcss-loader/index.js')),
+        loaderPath,
         exportedPath),
       context: __dirname
     };
