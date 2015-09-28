@@ -4,7 +4,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var path = require('path');
 
 module.exports = {
-  entry: path.resolve('renderer.js'),
+  entry: path.resolve('./renderer'),
 
   output: {
     filename: 'do-not-use-it.js',

@@ -1,0 +1,11 @@
+.bulleted
+{
+  padding-left: 1.2em;
+
+  list-style: square;
+}
+
+.numbered
+{
+  padding-left: 1.2em;
+}
