@@ -1,3 +1,5 @@
+import styles from './index.css';
+
 /**
  * @param  {string}  body
  * @param  {boolean} ordered
@@ -5,5 +7,9 @@
  */
 export default function list(body, ordered) {
   const type = ordered ? 'ol' : 'ul';
-  return `<${type}>\n${body}</${type}>\n`;
+  const className = ordered
+    ? styles.numbered
+    : styles.bulleted;
+
+  return `<${type} class="${className}">\n${body}</${type}>\n`;
 }

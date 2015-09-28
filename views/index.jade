@@ -2,6 +2,7 @@ doctype html
 html
   head
     title universal-usage
+    link(rel='stylesheet', href='/static/global.css')
     link(rel='stylesheet', href='/static/common.css')
 
-  body(class='#{layout}') !{innerHtml}
+  body !{innerHtml}

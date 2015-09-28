@@ -3,7 +3,6 @@ import marked from 'marked';
 import renderer from './renderer';
 import { readFile } from 'fs';
 import { join, resolve } from 'path';
-import stylesLayout from './styles/layout.css';
 
 const app = express();
 const port = 3000;
@@ -19,10 +18,7 @@ app.get('/', (req, res) => {
     }
 
     const html = marked(data, {renderer: renderer});
-    res.render('index', {
-      innerHtml: html,
-      layout: stylesLayout.body
-    });
+    res.render('index', {innerHtml: html});
   });
 });
 

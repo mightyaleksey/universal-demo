@@ -1,0 +1,9 @@
+.common
+{
+  margin-top: 0;
+
+  hyphens: auto;
+
+  -webkit-hypens: auto;
+     -moz-hypens: auto;
+}

@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "webpack && cp styles/* static/",
     "start": "node server.js"
   },
   "author": "Alexey Litvinov",

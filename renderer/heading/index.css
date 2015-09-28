@@ -1,0 +1,19 @@
+.primary
+{
+  margin-top: 0;
+
+  font-weight: normal;
+}
+
+.secondary
+{
+  font-weight: normal;
+}
+
+.tertiary
+{
+  margin-top: 3em;
+
+  font-weight: normal;
+  font-style: italic;
+}

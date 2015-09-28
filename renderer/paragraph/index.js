@@ -1,7 +1,9 @@
+import styles from './index.css';
+
 /**
  * @param  {string} text
  * @return {string}
  */
 export default function paragraph(text) {
-  return `<p>${text}</p>\n`;
+  return `<p class="${styles.common}">${text}</p>\n`;
 }

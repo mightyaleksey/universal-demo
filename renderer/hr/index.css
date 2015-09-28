@@ -1,0 +1,11 @@
+.common
+{
+  height: 1px;
+  margin: 2em 0;
+
+  color: #ddd;
+  border-top: solid 1px #ddd;
+  border-right: 0;
+  border-bottom: none;
+  border-left: 0;
+}

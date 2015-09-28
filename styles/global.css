@@ -1,0 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic&subset=latin);
+
+html,
+body
+{
+  max-width: 42em;
+  margin: auto;
+  padding: 1em;
+
+  background: #fefefe;
+}
+
+body
+{
+  text-align: justify;
+
+  color: #333;
+
+  font: 1.3em 'Vollkorn', Palatino, Times;
+  line-height: 1.4;
+}
